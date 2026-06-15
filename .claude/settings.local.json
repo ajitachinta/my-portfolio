@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Start-Sleep -Seconds 3; try { $r = Invoke-WebRequest -Uri \"http://localhost:5173\" -UseBasicParsing -TimeoutSec 5; Write-Output \"Status: $\\($r.StatusCode\\)\" } catch { Write-Output \"Error: $_\" })",
+      "PowerShell(cd \"c:\\\\Users\\\\ajita\\\\my-portfolio\"; $job = Start-Job { cd \"c:\\\\Users\\\\ajita\\\\my-portfolio\"; npx vite 2>&1 }; Start-Sleep -Seconds 8; Receive-Job $job; Stop-Job $job; Remove-Job $job)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://127.0.0.1:5174\" -UseBasicParsing -TimeoutSec 5; Write-Output \"Status: $\\($r.StatusCode\\)\"; $r.Content | Select-String -Pattern \"root|vite\" | Select-Object -First 3 } catch { Write-Output \"Error: $_\" })",
+      "PowerShell(netstat -ano)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://127.0.0.1:5173\" -UseBasicParsing -TimeoutSec 5; Write-Output \"Status: $\\($r.StatusCode\\)\"; \\($r.Content | Select-String -Pattern \"id=.root\"\\).Matches[0].Value } catch { Write-Output \"Error: $_\" })",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://127.0.0.1:5173/index.html\" -UseBasicParsing -TimeoutSec 5; Write-Output \"Status: $\\($r.StatusCode\\)\" } catch { Write-Output \"Error: $\\($_.Exception.Message\\)\" })",
+      "PowerShell($paths = @\\(\"C:\\\\Program Files\\\\Git\\\\cmd\\\\git.exe\", \"C:\\\\Program Files \\(x86\\)\\\\Git\\\\cmd\\\\git.exe\", \"$env:LOCALAPPDATA\\\\Programs\\\\Git\\\\cmd\\\\git.exe\"\\); foreach \\($p in $paths\\) { if \\(Test-Path $p\\) { Write-Output \"FOUND: $p\" } }; Write-Output \"--- winget available? ---\"; $w = Get-Command winget -ErrorAction SilentlyContinue; if \\($w\\) { Write-Output \"winget: yes\" } else { Write-Output \"winget: no\" })",
+      "PowerShell(winget install --id Git.Git -e --source winget --accept-source-agreements --accept-package-agreements 2>&1)",
+      "PowerShell($p = \"C:\\\\Program Files\\\\Git\\\\cmd\\\\git.exe\"; if \\(Test-Path $p\\) { Write-Output \"Git installed: $\\(& $p --version\\)\" } else { Write-Output \"Git not yet installed \\(winget still running\\)\" })",
+      "PowerShell($p = \"C:\\\\Program Files\\\\Git\\\\cmd\\\\git.exe\"; if \\(Test-Path $p\\) { Write-Output \"Git installed: $\\(& $p --version\\)\" } else { Write-Output \"Git still installing\" })",
+      "PowerShell($git = \"C:\\\\Program Files\\\\Git\\\\cmd\\\\git.exe\"; if \\(Test-Path $git\\) { Write-Output \"Git ready: $\\(& $git --version\\)\" } else { Write-Output \"Git NOT found yet\" })",
+      "PowerShell(winget list --id Git.Git -e 2>&1)",
+      "PowerShell(Get-Process -Name \"winget\" -ErrorAction SilentlyContinue | Select-Object Id, StartTime, @{N='RunMins';E={[math]::Round\\(\\(\\(Get-Date\\) - $_.StartTime\\).TotalMinutes,1\\)}}; Write-Output \"---UAC consent prompt?---\"; Get-Process -Name \"consent\",\"UserAccountControlSettings\" -ErrorAction SilentlyContinue | Select-Object Name, Id)"
+    ]
+  }
+}
