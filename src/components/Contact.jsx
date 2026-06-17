@@ -90,10 +90,6 @@ export default function Contact() {
           )
         })}
       </div>
-
-      <footer className="site-footer">
-        <p>Designed &amp; built by Ajita Chinta · Seattle, WA</p>
-      </footer>
     </section>
   )
 }

@@ -96,10 +96,3 @@
   color: var(--accent-light);
 }
 
-.site-footer {
-  margin-top: 80px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border);
-  color: var(--text-muted);
-  font-size: 0.8rem;
-}
