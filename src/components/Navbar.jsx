@@ -34,7 +34,30 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <a href="#about" className="navbar-logo">Ajita<span className="logo-dot">.</span></a>
+      <a href="#about" className="navbar-logo" aria-label="Ajita Chinta — home">
+        <svg width="40" height="40" viewBox="0 0 40 40" role="img" aria-hidden="true">
+          <defs>
+            <linearGradient id="logoGradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor="#7c6af5" />
+              <stop offset="100%" stopColor="#5eead4" />
+            </linearGradient>
+          </defs>
+          <circle cx="20" cy="20" r="18" fill="none" stroke="url(#logoGradient)" strokeWidth="2" />
+          <text
+            x="50%"
+            y="50%"
+            dy="0.35em"
+            textAnchor="middle"
+            fontFamily="Inter, system-ui, sans-serif"
+            fontSize="15"
+            fontWeight="700"
+            fill="url(#logoGradient)"
+            letterSpacing="0.5"
+          >
+            AC
+          </text>
+        </svg>
+      </a>
 
       <div className="navbar-right">
         <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
