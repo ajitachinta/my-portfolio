@@ -61,17 +61,17 @@
   justify-content: center;
   width: 38px;
   height: 38px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  background: var(--bg-card);
-  color: var(--text);
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
   cursor: pointer;
-  transition: border-color 0.2s, color 0.2s, transform 0.2s;
+  transition: color 0.2s, background 0.2s, transform 0.2s;
 }
 
 .theme-toggle:hover {
-  border-color: var(--accent);
   color: var(--accent-light);
+  background: rgba(124, 106, 245, 0.1);
   transform: translateY(-1px);
 }
 
