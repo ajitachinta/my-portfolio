@@ -16,7 +16,7 @@ const programs = [
     tech: ['Azure AKS', 'Azure Service Bus', 'Azure DevOps', '.NET Core'],
   },
   {
-    title: '$1M Pre-Hire Onboarding Platform',
+    title: 'Pre-Hire Onboarding Platform',
     company: 'Deloitte · 2019–2021',
     description:
       'Served as Release Train Engineer and delivery lead for a $1M enterprise onboarding platform. Managed a 15-engineer team, facilitated PI planning, ran client whiteboarding sessions, made architectural decisions, and drove end-to-end delivery from discovery to production.',
