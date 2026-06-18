@@ -143,3 +143,22 @@ a {
     transition: none;
   }
 }
+
+/* Tighten section spacing on small screens */
+@media (max-width: 600px) {
+  #programs,
+  #skills,
+  #faq {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .contact-section {
+    padding-top: 40px;
+    padding-bottom: 56px;
+  }
+
+  .section-title {
+    margin-bottom: 28px;
+  }
+}

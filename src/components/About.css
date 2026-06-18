@@ -106,3 +106,11 @@
   background: radial-gradient(ellipse at center, rgba(124, 106, 245, 0.12) 0%, transparent 70%);
   border-radius: 50%;
 }
+
+/* On mobile, let the hero size to its content instead of filling the screen */
+@media (max-width: 600px) {
+  .about {
+    min-height: auto;
+    padding: 104px 24px 40px;
+  }
+}
