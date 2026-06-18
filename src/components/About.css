@@ -89,7 +89,9 @@
 .btn-resume {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 7px;
+  padding: 12px 18px;
+  font-size: 0.9rem;
 }
 
 .about-decoration {
