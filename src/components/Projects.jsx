@@ -5,28 +5,28 @@ const programs = [
     title: 'Pet Insurance Platform Migration',
     company: 'Moneysupermarket Group · 2023–2025',
     description:
-      'Led the migration of the Pet Insurance platform to a new TypeScript/Vue framework. Managed scope, timelines, and stakeholder communication — reducing time-to-market by eliminating manual configuration overhead. Coordinated across product, design, QA, and engineering on a platform serving millions of users.',
+      'Led the migration of the Pet Insurance platform to a TypeScript/Vue framework — managing scope, timeline, and stakeholder communication — cutting time-to-market for product configuration changes by ~40% across a 6-month cycle. Coordinated 4 cross-functional teams (product, design, QA, engineering) across 3 time zones on a platform serving millions of users.',
     tech: ['TypeScript', 'Vue.js', 'AWS Lambda', 'CI/CD', 'GitHub Actions'],
   },
   {
     title: 'Power Trading Application Redesign',
     company: 'EDF Trading · 2022–2023',
     description:
-      'Delivered a full redesign of a Power trading application on Azure, coordinating technical delivery across architecture, backend, and DevOps workstreams. Acted as technical point of contact — translating business requirements into architectural decisions and aligning stakeholders with engineering execution.',
+      'Directed the full redesign program for a Power trading application on Azure (AKS, Service Bus, Azure DevOps), serving as technical point of contact and program coordinator across architecture, backend, and DevOps workstreams for a 4-engineer team. Cut design-to-dev handoff cycles from ~3 rounds to 1 via a weekly technical decision log reviewed with stakeholders.',
     tech: ['Azure AKS', 'Azure Service Bus', 'Azure DevOps', '.NET Core'],
   },
   {
     title: 'Pre-Hire Onboarding Platform',
     company: 'Deloitte · 2019–2021',
     description:
-      'Served as Release Train Engineer and delivery lead for a $1M enterprise onboarding platform. Managed a 15-engineer team, facilitated PI planning, ran client whiteboarding sessions, made architectural decisions, and drove end-to-end delivery from discovery to production.',
-    tech: ['SAFe / Agile', 'Microservices', 'Cloud Deployments', 'JIRA', 'ADO'],
+      'Served as Release Train Engineer and delivery lead for a $1M pre-hire onboarding platform — managing a 15-engineer team, facilitating PI planning across 4 PIs, and coordinating with 6+ executive stakeholders from discovery through production launch. Defined architectural boundaries (microservices, DB design, identity, cloud deployments) and accelerated requirements signoff.',
+    tech: ['SAFe / Agile', 'Microservices', 'Cloud Deployments', 'JIRA'],
   },
   {
     title: 'Recognition Portal — Cross-Timezone Delivery',
     company: 'Deloitte · 2019–2021',
     description:
-      'Led a 5-engineer cross-functional team — including a remote team in Argentina — to deliver a Recognition Portal on schedule. Owned full program lifecycle: scope definition, risk identification, sprint planning, dependency tracking, release management, and post-launch support.',
+      'Led a 5-engineer cross-functional team — including a remote team in Argentina — to deliver a Recognition Portal on schedule, establishing async communication rhythms that reduced status-meeting overhead by ~30%. Owned the full program lifecycle: scope, risk, sprint planning, release management, and post-launch support.',
     tech: ['Cross-timezone Coordination', 'Scrum', 'Azure DevOps', 'REST APIs'],
   },
 ]

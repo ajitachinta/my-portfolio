@@ -7,7 +7,7 @@ const categories = [
   },
   {
     label: 'Cloud & DevOps',
-    skills: ['Azure App Services', 'Azure Service Bus', 'Azure DevOps', 'AWS Lambda', 'CI/CD', 'GitHub Actions'],
+    skills: ['Azure App Services', 'Azure Service Bus', 'Azure DevOps', 'AWS Lambda', 'AWS S3', 'Landing Zone', 'CI/CD', 'GitHub Actions', 'Datadog'],
   },
   {
     label: 'Databases',
